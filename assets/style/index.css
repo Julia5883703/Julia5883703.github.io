@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #D0E1F9;
+    font-family: 'Truculenta', 'Arial Narrow',
+    Arial,
+    sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #283655;
+}
+
+.main_name {
+    width: 50vw;
+    align-self: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.my_photo_box {
+    width: 12vw;
+    margin: 0 auto 3vh auto;
+}
+
+.my_photo {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.job_title {
+    margin: 3vh 0;
+}
+
+.info_wrapper {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
+
+.main_about {
+    padding-bottom: 5vh;
+    padding-right: 5vw;
+}
+
+.about_text {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.link_portfolio {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #D0E1F9;
+}
+
+.skills_list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    list-style: none;
+}
+
+.skills_item {
+    margin: 0 15px 15px 0;
+    padding: 0 10px;
+    border: 2px solid #6f8db9;
+    border-radius: 2em;
+    background-color: #536e96;
+}
+
+@media screen and (max-width : 767px) {
+    .main {
+        padding-top: 10px;
+    }
+
+    .main_name {
+        align-self: flex-start;
+        font-size: 1.0em;
+    }
+
+    .info_wrapper {
+        justify-content: flex-start;
+    }
+
+    .about_text {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+
+    .link_portfolio {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+
+    .skills_list {
+        margin-top: 8px;
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+
+    .skills_item {
+        margin: 0 10px 10px 0;
+        padding: 0 8px;
+        border: 1px solid #6f8db9;
+        border-radius: 2em;
+        background-color: #536e96;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .main {
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-top: 10px;
+    }
+
+    .info_wrapper, .main_name {
+        width: 100%;
+        padding-left: 5vw;
+        padding-top: 4vh;
+    }
+
+    .my_photo_box {
+        width: 50vw;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .job_title {
+        font-size: 1.4em;
+    }
+}
+
+
